@@ -1,0 +1,12 @@
+def read_last_lines(filename, lines):
+    with open(filename, "r") as tfile:
+        display = tfile.readlines()[-lines:]
+        for l in display:
+            print(l, end="")
+
+
+read_last_lines("doc.txt", 2)
+
+output:
+They don’t eat up people’s gardens, don’t nest in corn cribs, they don’t do one thing but sing their hearts out for us. 
+That’s why it’s a sin to kill a mockingbird.” – Harper Lee, To Kill a Mockingbird
